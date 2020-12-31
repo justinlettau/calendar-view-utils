@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/justinlettau/calendar-view-utils.svg)](https://david-dm.org/justinlettau/calendar-view-utils)
 [![Dev Dependency Status](https://david-dm.org/justinlettau/calendar-view-utils/dev-status.svg)](https://david-dm.org/justinlettau/calendar-view-utils?type=dev)
 
-# Calendar Core
+# Calendar View Utilities
 
 Utilities for generating calendar views.
 
