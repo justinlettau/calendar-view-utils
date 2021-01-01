@@ -13,9 +13,11 @@ Utilities for generating calendar views.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [CalendarMonth](#calendar-month)
-  - [CalendarWeek](#calendar-week)
-  - [CalendarDay](#calendar-day)
+  - [CalendarMonth](#calendarmonth)
+  - [CalendarWeek](#calendarweek)
+  - [CalendarDay](#calendarday)
+  - [Options](#options)
+  - [Utilities](#utilities)
 - [Development](#development)
 
 # Features
@@ -33,50 +35,88 @@ npm install calendar-view-utils --save
 # Usage
 
 ```ts
-import { CalendarMonth, DayOfWeek, getWeekDays } from 'calendar-view-utils';
+import { CalendarMonth } from 'calendar-view-utils';
 
 const date = new Date(2021, 0, 1);
-const month = new CalendarMonth(date);
 
-console.log(month);
-/* =>
-{
-  year: 2021,
-  month: 0,
-  weeks: [
-    {
-      isoWeek: 0,
-      days: [
-        {
-          day: 1,
-          month: 0,
-          year: 2021,
-          isToday: false,
-          isPast: true,
-          isFuture: false,
-        },
-        ...
-      ],
-    },
-    ...
-  ],
-}
-*/
+const view = new CalendarMonth(date);
+console.log(view);
+```
 
-const daysOfWeek = getWeekDays();
+See the [example](./example) folder for a working example.
 
-console.log(daysOfWeek);
-/* =>
-[
-  DayOfWeek.Sunday,
-  DayOfWeek.Monday,
-  DayOfWeek.Tuesday,
-  DayOfWeek.Wednesday,
-  DayOfWeek.Thursday,
-  DayOfWeek.Friday,
-  DayOfWeek.Saturday,
-]
-*/
+## `CalendarMonth`
+
+Create a `CalendarMonth` for the target `date`. A `CalendarMonth` contains all the needed information
+for building a standard month view.
+
+```ts
+new CalendarMonth(date);
+```
+
+| Property | Description                        | Type             |
+| -------- | ---------------------------------- | ---------------- |
+| `year`   | Year value                         | `number`         |
+| `month`  | Month value                        | `month`          |
+| `weeks`  | Collection of weeks with the month | `CalendarWeek[]` |
+
+## `CalendarWeek`
+
+Create a `CalendarWeek` for the target `date`. A `CalendarWeek` contains all the needed information
+for building a standard week view.
+
+```ts
+new CalendarWeek(date);
+```
+
+| Property  | Description                        | Type            |
+| --------- | ---------------------------------- | --------------- |
+| `isoWeek` | ISO week value                     | `month`         |
+| `days`    | Collection of days within the week | `CalendarDay[]` |
+
+## `CalendarDay`
+
+Create a `CalendarDay` for the target `date`.
+
+```ts
+new CalendarDay(date);
+```
+
+| Property   | Description                          | Type      |
+| ---------- | ------------------------------------ | --------- |
+| `day`      | Day of month value                   | `number`  |
+| `month`    | Month value                          | `month`   |
+| `year`     | Year value                           | `month`   |
+| `isToday`  | Indicates if the day is today.       | `boolean` |
+| `isPast`   | Indicates if the day is before today | `boolean` |
+| `isFuture` | Indicates if the day is after today  | `boolean` |
+
+## Options
+
+```ts
+import { DayOfWeek } from 'calendar-view-utils';
+
+const options = {
+  weekStartsOn: DayOfWeek.Monday,
+};
+
+const view = new CalendarWeek(date, options);
+```
+
+| Property       | Description                  | Type        | Default  |
+| -------------- | ---------------------------- | ----------- | -------- |
+| `weekStartsOn` | Which day the week starts on | `DayOfWeek` | `Sunday` |
+
+## Utilities
+
+```ts
+import { DayOfWeek, getWeekDays } from 'calendar-view-utils';
+
+const example1 = getWeekDays();
+// => [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+
+const example2 = getWeekDays(DayOfWeek.Monday);
+// => [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
 ```
 
 # Development

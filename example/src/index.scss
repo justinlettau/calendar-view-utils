@@ -1,0 +1,56 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2rem 0;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  &__title {
+    margin: 0;
+  }
+}
+
+.calendar {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+
+  &__weekday {
+    font-weight: bold;
+  }
+
+  &__day {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      margin-top: 100%;
+    }
+
+    &--is-today {
+      background-color: #fffadf;
+    }
+
+    &--is-outside {
+      opacity: .3;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+  }
+}
