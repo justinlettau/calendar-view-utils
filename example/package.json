@@ -9,7 +9,7 @@
     "@types/jest": "^26.0.19",
     "@types/node": "^12.19.11",
     "@types/react": "^16.14.2",
-    "@types/react-dom": "^16.9.10",
+    "@types/react-dom": "^17.0.0",
     "calendar-view-utils": "^1.0.1",
     "classnames": "^2.2.6",
     "date-fns": "^2.16.1",
