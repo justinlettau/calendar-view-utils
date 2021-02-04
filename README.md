@@ -57,7 +57,7 @@ new CalendarMonth(date);
 | Property | Description                        | Type             |
 | -------- | ---------------------------------- | ---------------- |
 | `year`   | Year value                         | `number`         |
-| `month`  | Month value                        | `month`          |
+| `month`  | Month value                        | `number`         |
 | `weeks`  | Collection of weeks with the month | `CalendarWeek[]` |
 
 ## `CalendarWeek`
@@ -71,7 +71,7 @@ new CalendarWeek(date);
 
 | Property  | Description                        | Type            |
 | --------- | ---------------------------------- | --------------- |
-| `isoWeek` | ISO week value                     | `month`         |
+| `isoWeek` | ISO week value                     | `number`        |
 | `days`    | Collection of days within the week | `CalendarDay[]` |
 
 ## `CalendarDay`
@@ -82,14 +82,15 @@ Create a `CalendarDay` for the target `date`.
 new CalendarDay(date);
 ```
 
-| Property   | Description                          | Type      |
-| ---------- | ------------------------------------ | --------- |
-| `day`      | Day of month value                   | `number`  |
-| `month`    | Month value                          | `month`   |
-| `year`     | Year value                           | `month`   |
-| `isToday`  | Indicates if the day is today.       | `boolean` |
-| `isPast`   | Indicates if the day is before today | `boolean` |
-| `isFuture` | Indicates if the day is after today  | `boolean` |
+| Property    | Description                          | Type      |
+| ----------- | ------------------------------------ | --------- |
+| `isoString` | ISO string value (date)              | `string`  |
+| `day`       | Day of month value                   | `number`  |
+| `month`     | Month value                          | `number`  |
+| `year`      | Year value                           | `number`  |
+| `isToday`   | Indicates if the day is today.       | `boolean` |
+| `isPast`    | Indicates if the day is before today | `boolean` |
+| `isFuture`  | Indicates if the day is after today  | `boolean` |
 
 ## Options
 

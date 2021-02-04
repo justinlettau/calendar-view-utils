@@ -1,4 +1,4 @@
-import { getDate, getMonth, getYear } from 'date-fns';
+import { getDate, getMonth, getYear, formatISO } from 'date-fns';
 
 import { CalendarDay } from './calendar-day';
 
@@ -7,6 +7,7 @@ describe('CalendarDay', () => {
     const date = new Date(2020, 6, 1);
     const day = new CalendarDay(date);
 
+    expect(day.isoString).toBe('2020-07-01');
     expect(day.day).toBe(1);
     expect(day.month).toBe(6);
     expect(day.year).toBe(2020);
@@ -19,6 +20,7 @@ describe('CalendarDay', () => {
     const date = new Date();
     const day = new CalendarDay(date);
 
+    expect(day.isoString).toBe(formatISO(date, { representation: 'date' }));
     expect(day.day).toBe(getDate(date));
     expect(day.month).toBe(getMonth(date));
     expect(day.year).toBe(getYear(date));
@@ -31,6 +33,7 @@ describe('CalendarDay', () => {
     const date = new Date(2121, 6, 1);
     const day = new CalendarDay(date);
 
+    expect(day.isoString).toBe('2121-07-01');
     expect(day.day).toBe(1);
     expect(day.month).toBe(6);
     expect(day.year).toBe(2121);
