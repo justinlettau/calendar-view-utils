@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/justinlettau/calendar-view-utils/compare/v1.1.0...v1.2.0) (2021-04-08)
+
+
+### Features
+
+* add month enum ([35d4070](https://github.com/justinlettau/calendar-view-utils/commit/35d4070a237bdee715d0d79ac309ba0c77d16b92))
+
 ## [1.1.0](https://github.com/justinlettau/calendar-view-utils/compare/v1.0.1...v1.1.0) (2021-02-04)
 
 
