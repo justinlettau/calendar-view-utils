@@ -1,7 +1,7 @@
 import { addDays, getISOWeek, startOfWeek } from 'date-fns';
 
 import { CalendarDay } from './calendar-day';
-import { CalendarOptions } from './interfaces';
+import { CalendarOptions, DayOfWeek } from './interfaces';
 
 /**
  * Calendar week.
@@ -9,8 +9,12 @@ import { CalendarOptions } from './interfaces';
 export class CalendarWeek {
   constructor(date: Date, options?: CalendarOptions) {
     this.options = options;
-    this.isoWeek = getISOWeek(date);
     this.days = this.getDays(date);
+
+    const thursday = this.days.find(
+      (x) => x.dayOfWeek === DayOfWeek.Thursday
+    ) as CalendarDay;
+    this.isoWeek = getISOWeek(thursday.date);
   }
 
   isoWeek: number;

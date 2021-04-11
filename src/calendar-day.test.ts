@@ -1,6 +1,7 @@
-import { getDate, getMonth, getYear, formatISO } from 'date-fns';
+import { formatISO, getDate, getDay, getMonth, getYear } from 'date-fns';
 
 import { CalendarDay } from './calendar-day';
+import { DayOfWeek } from './interfaces';
 
 describe('CalendarDay', () => {
   it('should return day for past date', () => {
@@ -9,6 +10,7 @@ describe('CalendarDay', () => {
 
     expect(day.isoString).toBe('2020-07-01');
     expect(day.day).toBe(1);
+    expect(day.dayOfWeek).toBe(DayOfWeek.Wednesday);
     expect(day.month).toBe(6);
     expect(day.year).toBe(2020);
     expect(day.isFuture).toBe(false);
@@ -22,6 +24,7 @@ describe('CalendarDay', () => {
 
     expect(day.isoString).toBe(formatISO(date, { representation: 'date' }));
     expect(day.day).toBe(getDate(date));
+    expect(day.dayOfWeek).toBe(getDay(date));
     expect(day.month).toBe(getMonth(date));
     expect(day.year).toBe(getYear(date));
     expect(day.isFuture).toBe(false);
@@ -35,6 +38,7 @@ describe('CalendarDay', () => {
 
     expect(day.isoString).toBe('2121-07-01');
     expect(day.day).toBe(1);
+    expect(day.dayOfWeek).toBe(DayOfWeek.Tuesday);
     expect(day.month).toBe(6);
     expect(day.year).toBe(2121);
     expect(day.isFuture).toBe(true);
