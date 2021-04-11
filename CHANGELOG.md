@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/justinlettau/calendar-view-utils/compare/v1.2.0...v1.2.1) (2021-04-11)
+
+
+### Bug Fixes
+
+* use thursday to determine isoWeek value ([9e70ad4](https://github.com/justinlettau/calendar-view-utils/commit/9e70ad41d2d752679a7b7d262172b635f3b9e5f1))
+* **deps:** update dependency react-scripts to v4.0.2 ([2c40a05](https://github.com/justinlettau/calendar-view-utils/commit/2c40a05061cec596b868c78b7c3bc7c7a11eae6c))
+* **deps:** update dependency react-scripts to v4.0.3 ([8338166](https://github.com/justinlettau/calendar-view-utils/commit/83381665d461466576872dbc58ddda1880ff15b9))
+
 ## [1.2.0](https://github.com/justinlettau/calendar-view-utils/compare/v1.1.0...v1.2.0) (2021-04-08)
 
 
