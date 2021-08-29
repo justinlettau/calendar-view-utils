@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/justinlettau/calendar-view-utils/compare/v1.2.1...v1.3.0) (2021-08-29)
+
+
+### Features
+
+* output esm ([7e4b3b3](https://github.com/justinlettau/calendar-view-utils/commit/7e4b3b38f42b2db986833f179f0a16af0f040257))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to ^12.20.10 ([e8157db](https://github.com/justinlettau/calendar-view-utils/commit/e8157db87d2f2a03f965f252b24a5ed9fe95560c))
+
 ### [1.2.1](https://github.com/justinlettau/calendar-view-utils/compare/v1.2.0...v1.2.1) (2021-04-11)
 
 
