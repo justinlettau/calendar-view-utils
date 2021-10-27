@@ -8,6 +8,7 @@ import {
   isPast,
   isToday,
 } from 'date-fns';
+
 import { DayOfWeek } from './interfaces';
 
 /**
@@ -22,8 +23,8 @@ export class CalendarDay {
     this.month = getMonth(date);
     this.year = getYear(date);
     this.isToday = isToday(date);
-    this.isPast = isPast(date);
-    this.isFuture = isFuture(date);
+    this.isPast = !this.isToday && isPast(date);
+    this.isFuture = !this.isToday && isFuture(date);
   }
 
   date: Date;

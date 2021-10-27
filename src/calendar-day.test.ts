@@ -1,4 +1,11 @@
-import { formatISO, getDate, getDay, getMonth, getYear } from 'date-fns';
+import {
+  formatISO,
+  getDate,
+  getDay,
+  getMonth,
+  getYear,
+  startOfDay,
+} from 'date-fns';
 
 import { CalendarDay } from './calendar-day';
 import { DayOfWeek } from './interfaces';
@@ -19,7 +26,7 @@ describe('CalendarDay', () => {
   });
 
   it('should return day for today', () => {
-    const date = new Date();
+    const date = startOfDay(new Date());
     const day = new CalendarDay(date);
 
     expect(day.isoString).toBe(formatISO(date, { representation: 'date' }));
@@ -33,14 +40,14 @@ describe('CalendarDay', () => {
   });
 
   it('should return day for future date', () => {
-    const date = new Date(2121, 6, 1);
+    const date = new Date(2131, 6, 1);
     const day = new CalendarDay(date);
 
-    expect(day.isoString).toBe('2121-07-01');
+    expect(day.isoString).toBe('2131-07-01');
     expect(day.day).toBe(1);
-    expect(day.dayOfWeek).toBe(DayOfWeek.Tuesday);
+    expect(day.dayOfWeek).toBe(DayOfWeek.Sunday);
     expect(day.month).toBe(6);
-    expect(day.year).toBe(2121);
+    expect(day.year).toBe(2131);
     expect(day.isFuture).toBe(true);
     expect(day.isPast).toBe(false);
     expect(day.isToday).toBe(false);
