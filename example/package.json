@@ -10,7 +10,7 @@
     "@types/node": "^12.20.10",
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.10",
-    "calendar-view-utils": "^1.0.1",
+    "calendar-view-utils": "^2.0.0",
     "classnames": "^2.2.6",
     "date-fns": "^2.16.1",
     "normalize.css": "^8.0.1",
