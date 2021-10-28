@@ -2,12 +2,12 @@
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
     "lib": ["es6", "dom"],
-    "module": "commonjs",
+    "module": "ES2020",
     "moduleResolution": "node",
     "strict": true,
     "outDir": "dist",
     "sourceMap": true,
-    "target": "ES2020",
+    "target": "ES2019",
     "declaration": true
   },
   "include": ["src/**/*.ts"],
