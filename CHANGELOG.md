@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/justinlettau/calendar-view-utils/compare/v2.0.0...v2.0.1) (2021-10-28)
+
+
+### Bug Fixes
+
+* module output ([90bce4c](https://github.com/justinlettau/calendar-view-utils/commit/90bce4c11f0704cd80b99d3e8b23ca04086a634c))
+
 ## [2.0.0](https://github.com/justinlettau/calendar-view-utils/compare/v1.3.1...v2.0.0) (2021-10-27)
 
 
