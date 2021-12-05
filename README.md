@@ -1,12 +1,10 @@
 [![NPM Version](https://badge.fury.io/js/calendar-view-utils.svg)](https://badge.fury.io/js/calendar-view-utils)
 [![CI](https://github.com/justinlettau/calendar-view-utils/workflows/CI/badge.svg)](https://github.com/justinlettau/calendar-view-utils/actions)
 [![codecov](https://codecov.io/gh/justinlettau/calendar-view-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/justinlettau/calendar-view-utils)
-[![Dependency Status](https://david-dm.org/justinlettau/calendar-view-utils.svg)](https://david-dm.org/justinlettau/calendar-view-utils)
-[![Dev Dependency Status](https://david-dm.org/justinlettau/calendar-view-utils/dev-status.svg)](https://david-dm.org/justinlettau/calendar-view-utils?type=dev)
 
 # Calendar View Utilities
 
-Utilities for generating calendar views.
+Utilities for building calendar views.
 
 # Table of Contents
 
