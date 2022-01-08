@@ -9,8 +9,8 @@ import {
   startOfWeek,
 } from 'date-fns';
 
-import { CalendarWeek } from './calendar-week';
-import { CalendarOptions } from './interfaces';
+import { CalendarWeek } from './calendar-week.js';
+import { CalendarOptions } from './interfaces.js';
 
 /**
  * Calendar month.

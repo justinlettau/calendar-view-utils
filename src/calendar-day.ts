@@ -9,7 +9,7 @@ import {
   isToday,
 } from 'date-fns';
 
-import { DayOfWeek } from './interfaces';
+import { DayOfWeek } from './interfaces.js';
 
 /**
  * Calendar day.

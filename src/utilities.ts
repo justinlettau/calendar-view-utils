@@ -1,4 +1,4 @@
-import { DayOfWeek } from './interfaces';
+import { DayOfWeek } from './interfaces.js';
 
 /**
  * Get week days in order.

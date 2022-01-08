@@ -1,7 +1,7 @@
 import { addDays, getISOWeek, startOfWeek } from 'date-fns';
 
-import { CalendarDay } from './calendar-day';
-import { CalendarOptions, DayOfWeek } from './interfaces';
+import { CalendarDay } from './calendar-day.js';
+import { CalendarOptions, DayOfWeek } from './interfaces.js';
 
 /**
  * Calendar week.
