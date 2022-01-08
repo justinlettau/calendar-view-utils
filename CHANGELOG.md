@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/justinlettau/calendar-view-utils/compare/v2.0.1...v2.0.2) (2022-01-08)
+
+
+### Bug Fixes
+
+* esm import extensions ([6735495](https://github.com/justinlettau/calendar-view-utils/commit/67354951692c889bccb56990691b246e448c5ed7))
+
 ### [2.0.1](https://github.com/justinlettau/calendar-view-utils/compare/v2.0.0...v2.0.1) (2021-10-28)
 
 
