@@ -6,7 +6,9 @@
 
 Utilities for building calendar views.
 
-# Table of Contents
+> ⚡[Live demo](https://stackblitz.com/edit/calendar-view-utils-demo)
+
+## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
@@ -18,19 +20,19 @@ Utilities for building calendar views.
   - [Utilities](#utilities)
 - [Development](#development)
 
-# Features
+## Features
 
 - 📅 Tools to **create your own** UI or component.
 - 🛠 Works with native `Date` objects, **no library** required.
 - 🎉 Written in **TypeScript**.
 
-# Installation
+## Installation
 
 ```bash
 npm install calendar-view-utils --save
 ```
 
-# Usage
+## Usage
 
 ```ts
 import { CalendarMonth } from 'calendar-view-utils';
@@ -43,7 +45,7 @@ console.log(view);
 
 See the [example](./example) folder for a working example.
 
-## `CalendarMonth`
+### `CalendarMonth`
 
 Create a `CalendarMonth` for the target `date`. A `CalendarMonth` contains all the needed information
 for building a standard month view.
@@ -58,7 +60,7 @@ new CalendarMonth(date);
 | `month`  | Month value                        | `number`         |
 | `weeks`  | Collection of weeks with the month | `CalendarWeek[]` |
 
-## `CalendarWeek`
+### `CalendarWeek`
 
 Create a `CalendarWeek` for the target `date`. A `CalendarWeek` contains all the needed information
 for building a standard week view.
@@ -72,7 +74,7 @@ new CalendarWeek(date);
 | `isoWeek` | ISO week value                     | `number`        |
 | `days`    | Collection of days within the week | `CalendarDay[]` |
 
-## `CalendarDay`
+### `CalendarDay`
 
 Create a `CalendarDay` for the target `date`.
 
@@ -90,7 +92,7 @@ new CalendarDay(date);
 | `isPast`    | Indicates if the day is before today | `boolean` |
 | `isFuture`  | Indicates if the day is after today  | `boolean` |
 
-## Options
+### Options
 
 ```ts
 import { DayOfWeek } from 'calendar-view-utils';
@@ -106,7 +108,7 @@ const view = new CalendarWeek(date, options);
 | -------------- | ---------------------------- | ----------- | -------- |
 | `weekStartsOn` | Which day the week starts on | `DayOfWeek` | `Sunday` |
 
-## Utilities
+### Utilities
 
 ```ts
 import { DayOfWeek, getWeekDays } from 'calendar-view-utils';
@@ -118,7 +120,7 @@ const example2 = getWeekDays(DayOfWeek.Monday);
 // => [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
 ```
 
-# Development
+## Development
 
 ```
 npm install
