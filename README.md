@@ -43,8 +43,6 @@ const view = new CalendarMonth(date);
 console.log(view);
 ```
 
-See the [example](./example) folder for a working example.
-
 ### `CalendarMonth`
 
 Create a `CalendarMonth` for the target `date`. A `CalendarMonth` contains all the needed information
