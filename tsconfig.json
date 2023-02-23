@@ -6,7 +6,6 @@
     "moduleResolution": "node",
     "strict": true,
     "outDir": "dist",
-    "sourceMap": true,
     "target": "ES2019",
     "declaration": true
   },
