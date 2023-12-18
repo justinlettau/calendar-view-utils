@@ -46,7 +46,7 @@
     }
   },
   "dependencies": {
-    "date-fns": "^2.25.0"
+    "date-fns": "^3.0.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
