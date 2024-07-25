@@ -6,8 +6,6 @@
 
 Utilities for building calendar views.
 
-> ⚡[Live demo](https://stackblitz.com/edit/calendar-view-utils-demo)
-
 ## Table of Contents
 
 - [Features](#features)
